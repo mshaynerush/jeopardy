@@ -63,6 +63,10 @@
 			<li class="correct">Correct</li>
 			<li class="incorrect">Incorrect</li>
 		</ul>
+		<br />
+		<ul class="new">
+			<li class="new-game">New Game</li>
+		</ul>
 	</div>
 	
  
@@ -88,7 +92,7 @@
 			var currScore = Number($.cookie("score"))
 			if (isNaN(currScore)){
 				currScore = 0
-					
+					alert($.cookie("score"))
 					
 			}
 			var newScore = points + currScore

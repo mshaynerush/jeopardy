@@ -92,6 +92,11 @@ body
 	text-align: center;
 }
 
+ul
+{
+	list-style-type: none;
+}
+
 .result ul
 {
 	display: block;
@@ -116,6 +121,30 @@ body
 	line-height: 45px;
 }
 
+. new ul
+{
+	display: block;
+	height: 49px;
+	width: 304px;
+	padding: 2px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: blue;
+	text-align: center;
+}
+
+.new li
+{
+	font-family: Arial, sans-serif;
+	font-weight: 800;
+	color: #FEFAD5;
+	background-color: blue;
+	width: 150px;
+	height: 45px;
+	margin: 0 auto;
+	line-height: 45px;
+}
+
 li.correct
 {
 	background-color: green;
@@ -134,22 +163,5 @@ li.incorrect
 
 
 
-@media only screen and (max-width: 578px){
 	
-	.jtitle, jtitle p, .display-score
-	{
-		width: 100%;
-	}
-	
-	li
-	{
-		width: 50%;
-	}
-	
-	ul
-	{
-		height: 50vh;
-	}
-	
-}
 	
