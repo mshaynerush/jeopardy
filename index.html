@@ -126,7 +126,12 @@
 				if(newScore < 0){
 					$('.display-score').css("color", "red")
 				}				
-			})		
+			})	
+	 
+	 $('.new').click(function(){
+		 $.cookkie("score", 0)
+		 $('.display-score').text(0)
+	 })
 		
 
 })
