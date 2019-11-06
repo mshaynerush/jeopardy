@@ -90,6 +90,7 @@ body
 	background-color: blue;
 	margin: 2px;
 	text-align: center;
+
 }
 
 ul
@@ -153,6 +154,11 @@ li.correct
 li.incorrect
 {
 	background-color: red;
+}
+
+li:hover
+{
+	cursor: pointer;
 }
 
 .active
