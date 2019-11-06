@@ -77,6 +77,7 @@
  <script>
  $(document).ready(function(){
  
+	 $('.display-score').text($cookie("score"))
 	$('li.btn').click(function(){
 		$('li').removeClass('active')
 		$(this).toggleClass('active')
