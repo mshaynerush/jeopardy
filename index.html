@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="UTF-8">
+
+	<title>Jeopardy Play Along</title>
+<script src="jquery.js"></script>
+ <script src="jquery-cookie-master\src\jquery.cookie.js"></script>
+  
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+</head>
+<body>
+
+<div class="container">
+ 
+ 
+
+ 
+	<div class="jeopardy">
+		<div class="jtitle">
+
+		<p>So you think you're smarter than the contestants, eh?</p>
+		<div class="header-image"></div>
+		<br/>
+		 <p>Your Score:</p>
+		<div class="running-total">
+			
+			<div class="display-score"></div>
+		</div>
+ 
+
+	</div>
+	
+		<div class="jeopardy-left">
+		
+			<ul class="clue-button">
+				<li id="12" class="btn">$200</li>
+				<li id="14" class="btn">$400</li>
+				<li id="16" class="btn">$600</li>
+				<li id="18" class="btn">$800</li>
+				<li id="110" class="btn">$1000</li>
+				
+			</ul>
+			
+		</div>
+			
+		<div class="jeopardy-right">
+		
+			<ul class="clue-button">
+				<li id="24" class="btn">$400</li>
+				<li id="28" class="btn">$800</li>
+				<li id="212" class="btn">$1200</li>
+				<li id="216" class="btn">$1600</li>
+				<li id="220" class="btn">$2000</li>
+			</ul>
+			
+		</div>
+		
+		<ul class="result">
+			<li class="correct">Correct</li>
+			<li class="incorrect">Incorrect</li>
+		</ul>
+	</div>
+	
+ 
+
+ 
+ </div>
+ 
+ <script>
+ $(document).ready(function(){
+ 
+	$('li.btn').click(function(){
+		$('li').removeClass('active')
+		$(this).toggleClass('active')
+		$.cookie("amount", $(this).attr('id'))
+		})
+		
+	$('li.correct').click(function(){
+		var i = $.cookie("amount")
+		var id = i.substring(1, i.length)	
+	
+
+			var points = id * 100
+			var currScore = Number($.cookie("score"))
+			if (isNaN(currScore)){
+				currScore = 0
+					alert($.cookie("score"))
+					
+			}
+			var newScore = points + currScore
+
+			$.cookie("score", newScore)
+			
+			$('.display-score').text("$" + $.cookie("score"))
+				if(newScore > 0){
+					$('.display-score').css("color", "green")
+				}
+	
+	})
+	
+		$('li.incorrect').click(function(){
+		var i = $.cookie("amount")
+		var id = i.substring(1, i.length)	
+	
+
+			var points = id * 100
+			var currScore = Number($.cookie("score"))
+			if (isNaN(currScore)){
+				currScore = 0
+					alert($.cookie("score"))
+					
+			}
+			var newScore = currScore - points
+			$.cookie("score", newScore)
+			
+			$('.display-score').text("$" + $.cookie("score"))
+			
+				if(newScore < 0){
+					$('.display-score').css("color", "red")
+				}				
+			})		
+		
+
+})
+</script>
+ 
+</body>
+</html>
