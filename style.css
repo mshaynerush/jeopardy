@@ -134,7 +134,7 @@ li.incorrect
 
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 578px){
 	
 	.jtitle, jtitle p, .display-score
 	{
@@ -143,7 +143,7 @@ li.incorrect
 	
 	li
 	{
-		width: 50vh;
+		width: 50%;
 	}
 	
 	ul
