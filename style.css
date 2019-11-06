@@ -162,6 +162,20 @@ li.incorrect
 }
 
 
-
+@media only screen and (max-width: 480px){
+	
+	ul
+	{
+		list-style-type: none;
+		width: 100%;
+		
+	}
+	
+	li
+	{
+		width: 48%;
+	}
+	
+}
 	
 	
