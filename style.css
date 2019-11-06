@@ -134,5 +134,17 @@ li.incorrect
 
 
 
+@media only screen and (max-width: 480px){
 	
+	.jtitle, jtitle p, .display-score
+	{
+		width: 100%;
+	}
+	
+	.li
+	{
+		width: 48%;
+	}
+	
+}
 	
