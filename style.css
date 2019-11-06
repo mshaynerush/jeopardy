@@ -143,12 +143,12 @@ li.incorrect
 	
 	li
 	{
-		width: 48%;
+		width: 50vh;
 	}
 	
 	ul
 	{
-		height: 50%;
+		height: 50vh;
 	}
 	
 }
