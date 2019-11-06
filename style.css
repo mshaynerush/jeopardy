@@ -141,9 +141,14 @@ li.incorrect
 		width: 100%;
 	}
 	
-	.li
+	li
 	{
 		width: 48%;
+	}
+	
+	ul
+	{
+		height: 50%;
 	}
 	
 }
