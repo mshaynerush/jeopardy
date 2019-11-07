@@ -188,6 +188,11 @@ li:hover
 		width: 50%;
 	}
 	
+	.jtitle, jtitle p
+	{
+		width: `100%;
+	}
+	
 }
 	
 	
