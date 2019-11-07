@@ -191,11 +191,13 @@ li:hover
 	.jtitle, jtitle p
 	{
 		width: `100%;
+		text-align: center;
 	}
 	
 	.running-total
 	{
 		width: 100%;
+		text-align: center;
 	}
 	
 }
