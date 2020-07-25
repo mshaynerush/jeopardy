@@ -77,8 +77,14 @@
  <script>
  $(document).ready(function(){
 	 
-startVal = $.cookie("amount").val()
-	}
+	startVal =  $.cookie("score")
+		if ( isNan(startVal) ) {
+		startVal = 0
+		} else {
+		startVal = $.cookie("score")
+			
+	$('.display-score).text(startVal)
+		 
 	$('li.btn').click(function(){
 		$('li').removeClass('active')
 		$(this).toggleClass('active')
