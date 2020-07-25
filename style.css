@@ -1,75 +1,125 @@
+
+
+    
 body
 {
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
+
+
+.header
+{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 28pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    position: fixed;
+    z-index: 999;
+}
+
+.disclaimer
+{
+    font-size: 10pt;
+    color: #FFF;
+    font-family: sans-serif;
+    padding-right: 50px;
+}
 .container
 {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	min-width: 100vh;
-	min-height: 100vh;
-	text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-.running-total
+.alex-container
 {
-	margin: 25px;
-	min-height: 60px;
-	border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#FFF, #330055);
+    height: 100%;
+    width: 50%;
+    padding-top: 180px;
+    margin: 0;
 }
 
-.display-score
+.alex
 {
-	color: #FEFAD5;
-	font-size: 18pt;
-	font-family: Arial, sans-serif;
-	padding: 12px;
-	line-height: 36pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
-.jtitle, .jtitle p
+.alex-host
 {
-
-	max-width: 304px;
-	font-family: Arial, sans-serif;
-	font-size: 15pt;
-	margin: 0 auto;
-	position: relative;
-	left: 0px;
-	text-align: center;
+    width: 100%;
+    padding-left: 10%;
+    text-align: center;
 }
-
-.jeopardy
+.alex img
 {
-	text-align: center;
-	color: #000;
-	margin: 0 auto;
-	position: absolute;
+    width: 65%;
+    height: 100%;
 }
 
-.jeopardy-left
+.game-play
 {
-	width: 50%;
-	margin: 0 auto;
-	position: relative;
-	float: left;
-	
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #330055;
 }
 
-.jeopardy-right
+.game-panel
 {
-	width: 50%;
-	margin: 0 auto;
-	position: relative;
-	float: left;
+    border: 2px solid #000;
+    background-color: #FFF;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
 }
+
+.game-play-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score-buttons
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 .clue-button ul
 {
@@ -93,7 +143,7 @@ body
 	background-color: blue;
 	margin: 2px;
 	text-align: center;
-
+    border-radius: 8px;
 }
 
 ul
@@ -108,7 +158,8 @@ ul
 	width: 304px;
 	padding: 2px;
 	margin: 0 auto;
-	text-align: center;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .result li
@@ -122,10 +173,11 @@ ul
 	font-weight: 800;
 	color: #FEFAD5;
 	margin: 2px;
-	line-height: 45px;
+    line-height: 45px;
+    border-radius: 8px;
 }
 
-. new ul
+.new ul
 {
 	display: block;
 	height: 49px;
@@ -134,7 +186,8 @@ ul
 	margin: 0 auto;
 	text-align: center;
 	background-color: blue;
-	text-align: center;
+    text-align: center;
+    
 }
 
 .new li
@@ -146,7 +199,10 @@ ul
 	width: 150px;
 	height: 45px;
 	margin: 0 auto;
-	line-height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li.correct
@@ -175,7 +231,8 @@ li:hover
 	
 	.container
 	{
-		width: 100%;
+        width: 100%;
+        display: flex;
 	}
 	
 	
@@ -204,5 +261,3 @@ li:hover
 	}
 	
 }
-	
-	
