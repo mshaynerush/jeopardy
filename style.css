@@ -229,6 +229,10 @@ li:hover
 .display-score
 {
 	font-family: Montserrat;
+	font-size: 22pt;
+	padding: 12px;
+	width: 50%;
+	height: 35px;
 	border: 1px solid #330055;
 	border-radius: 2px;
 	display: flex;
