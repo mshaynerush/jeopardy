@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jeopardy Play Along</title>
 <script src="jquery.js"></script>
- <script src="jquery-cookie-master\src\jquery.cookie.js"></script>
+ <script src="jquery.cookie.js"></script>
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jeopardy_style.css">
 
 
 
@@ -17,7 +17,7 @@
 
 <div class="header">
     <div>
-        <img src="not_jeopardy.png">
+        <img src="/home/mshaynerush/Pictures/Web Images/not_jeopardy.png">
     </div>
     <div class="disclaimer">
     <p>This site is not affiliiate with Jeopardy! the network that hosts the show, nor does it have any ties with the popular game show. This site is for entertainment puproses only.</p>
@@ -33,7 +33,7 @@
     <h2>Host of America's favorite television trivia quiz show Jeopardy! since its debut in 1984!</h2>
     </div>
     <div class="alex">
-        <img src="AlexTrebek.png">
+        <img src="/home/mshaynerush/Pictures/Web Images/AlexTrebek.png">
     </div>
     
 </div>
@@ -51,38 +51,33 @@
                 <div class="game-play-header">
 
                     <p>So you think you're smarter than the contestants, eh?</p>
-                    <div class="header-image">
-                    <br/>
-			    <p>Your Score:</p><div class="display-score"></div>
+                    <p>Your Score:</p>
+                    <div class="display-score"></div>
                 </div>
         
                 <div class="score-buttons">
-                <ul class="clue-button">
-                    <li id="12" class="btn">$200</li>
-                    <li id="14" class="btn">$400</li>
-                    <li id="16" class="btn">$600</li>
-                    <li id="18" class="btn">$800</li>
-                    <li id="110" class="btn">$1000</li>
-                    
-                </ul>
-            
-                <ul class="clue-button">
-                    <li id="24" class="btn">$400</li>
-                    <li id="28" class="btn">$800</li>
-                    <li id="212" class="btn">$1200</li>
-                    <li id="216" class="btn">$1600</li>
-                    <li id="220" class="btn">$2000</li>
-                </ul>
+                    <ul class="clue-button">
+                        <li id="12" class="btn">$200</li>
+                        <li id="16" class="btn">$600</li>
+                        <li id="110" class="btn">$1000</li>
+                        <li id="216" class="btn">$1600</li>
+                        
+                    </ul>
                 
+                    <ul class="clue-button">
+                        <li id="24" class="btn">$400</li>
+                        <li id="28" class="btn">$800</li>
+                        <li id="212" class="btn">$1200</li>
+                        <li id="220" class="btn">$2000</li>
+                    </ul>                
                 </div>
                 
                 <div class="result-buttons">
-                <ul class="result">
-                    <li class="correct">Correct</li>
-                    <li class="incorrect">Incorrect</li> 
-                </ul>
-                <br />
-            </div>
+                    <ul class="result">
+                        <li class="correct">Correct</li>
+                        <li class="incorrect">Incorrect</li> 
+                    </ul>
+                </div>
 
                 <div class="new-button">
                     <ul class="new">
