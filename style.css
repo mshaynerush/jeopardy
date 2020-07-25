@@ -71,8 +71,6 @@ ul
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .alex-host
@@ -209,39 +207,94 @@ li:hover
 	border: 2px solid black;
 	
 }
+.disclaimer-mobile
+{
+    display: none;
+}
 
+@media only screen and (max-width: 1024px){
 
-@media only screen and (max-width: 480px){
-	
-	.container
-	{
+    .header
+    {
+        padding: 0;
         width: 100%;
+        display: fixed;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    .header img 
+    {
+        width: 100%;
+    }
+
+    .disclaimer
+    {
+        display: none;
+    }
+
+    .disclaimer-mobile
+    {
+        color: #FFF;
+        display: block;
+        font-size: 8pt;
+        position: relative;
+        left: 10%;
+        cursor: pointer;
+    }
+
+    .container
+    {
         display: flex;
-	}
-	
-	
-	ul
-	{
-		list-style-type: none;
-		width: 100%;
-		
-	}
-	
-	li
-	{
-		width: 50%;
-	}
-	
-	.jtitle, jtitle p
-	{
-		width: `100%;
-		text-align: center;
-	}
-	
-	.running-total
-	{
-		width: 100%;
-		text-align: center;
-	}
-	
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+    }
+
+    .game-play
+    {
+        width: 100%;
+        height: 105vh;
+        margin-top: 380px;
+    }
+
+    .game-panel
+    {
+    border: 2px solid #000;
+    background-color: #FFF;
+    width: 85%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 5%;
+    }
+    
+    .alex-container
+    {
+        width: 100%;
+        margin: 0;
+        background-color: #330055;
+        background: none;
+        margin-top: -180px;
+    }
+
+    .alex
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .result-buttons ul
+    {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 3px 0;
+    }
+
 }
