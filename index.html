@@ -77,10 +77,12 @@
  <script>
  $(document).ready(function(){
  
-	 if( !$.cookie("amount") ) {
-		 $.cookie("amount", 0)
-	 }
-	
+	var startVal = $.cookie("amount".val()
+	if startVal = "undefined" {
+		startVal = 0
+	} else {
+		startVal = $.cookie("amount").val()
+	 
 	$('li.btn').click(function(){
 		$('li').removeClass('active')
 		$(this).toggleClass('active')
