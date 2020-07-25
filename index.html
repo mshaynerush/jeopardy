@@ -76,19 +76,15 @@
  
  <script>
  $(document).ready(function(){
- 
-	alert($.cookie("amount"))
-	if (startVal = "undefined") {
-		startVal = 0
-	} else {
-		startVal = $.cookie("amount").val()
+	 
+startVal = $.cookie("amount").val()
 	}
 	$('li.btn').click(function(){
 		$('li').removeClass('active')
 		$(this).toggleClass('active')
 		$.cookie("amount", $(this).attr('id'))
 		})
-		alert(cookie)
+		alert($.cookie)
 	$('li.correct').click(function(){
 		var i = $.cookie("amount")
 			
