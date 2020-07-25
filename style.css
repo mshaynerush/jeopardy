@@ -238,7 +238,6 @@ li:hover
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: green;
 }
 
 @media only screen and (max-width: 480px){
