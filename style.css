@@ -231,13 +231,14 @@ li:hover
 	font-family: Montserrat;
 	font-size: 22pt;
 	padding: 12px;
-	width: 50%;
+	width: auto;
 	height: 35px;
 	border: 1px solid #330055;
 	border-radius: 2px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: green;
 }
 
 @media only screen and (max-width: 480px){
