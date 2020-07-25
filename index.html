@@ -77,18 +77,16 @@
  <script>
  $(document).ready(function(){
  
-
+	
 	$('li.btn').click(function(){
 		$('li').removeClass('active')
 		$(this).toggleClass('active')
 		$.cookie("amount", $(this).attr('id'))
 		})
-		
+		alert(cookie)
 	$('li.correct').click(function(){
 		var i = $.cookie("amount")
-		if (!i) {
-			i=0;
-		} else {
+			
 		var id = i.substring(1, i.length)	
 	
 
@@ -99,7 +97,7 @@
 					alert($.cookie("score"))
 					
 			}
-		}
+		
 			var newScore = points + currScore
 
 			$.cookie("score", newScore)
