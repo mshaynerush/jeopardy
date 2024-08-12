@@ -38,19 +38,20 @@ ul
 
 .disclaimer
 {
+    width: 30%;
     font-size: 10pt;
     color: #FFF;
     font-family: sans-serif;
     padding-right: 50px;
-    padding-left; 20px;
+    padding-left: 20px;
     position: absolute;
     top: 0;
     right: 0;
 }
 .container
 {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
