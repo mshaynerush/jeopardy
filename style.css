@@ -33,7 +33,7 @@ ul
     align-items: center;
     padding-left: 15px;
     position: fixed;
-    margin: -5px;
+    margin: -10px;
     z-index: 999;
 	word-wrap: normal;
 }
@@ -64,7 +64,7 @@ ul
     align-items: center;
     background: linear-gradient(to right,#FFF, #330055);
     height: 100%;
-    width: 50%;
+/*     width: 50%; */
     padding-top: 180px;
     margin: 0;
 }
