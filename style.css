@@ -30,15 +30,16 @@ ul
     font-size: 28pt;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 15px;
     position: fixed;
     z-index: 999;
+	
 }
 
 .disclaimer
 {
-    text-wrap: wrap;
+    word-wrap: wrap;
     font-size: 10pt;
     color: #FFF;
     font-family: sans-serif;
