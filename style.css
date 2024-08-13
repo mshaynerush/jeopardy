@@ -38,6 +38,7 @@ ul
 
 .disclaimer
 {
+    text-wrap: wrap;
     font-size: 10pt;
     color: #FFF;
     font-family: sans-serif;
