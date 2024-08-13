@@ -22,7 +22,7 @@ ul
 
 .header
 {
-    width: 100%;
+    width: calc(100% + 10px);
     height: 80px;
     background-color: black;
     color: #FFF;
