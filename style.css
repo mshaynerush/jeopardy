@@ -44,10 +44,10 @@ ul
     font-family: sans-serif;
     padding-right: 50px;
     padding-left: 20px;
-    position: absolute;
+/*     position: absolute;
     top: 0;
     right: 0;
-    left: 30%;
+    left: 30%; */
     background-color: red;
 }
 .container
