@@ -39,7 +39,7 @@ ul
 
 .disclaimer
 {
-    word-wrap: wrap;
+    word-wrap: normal;
     font-size: 10pt;
     color: #FFF;
     font-family: sans-serif;
