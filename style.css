@@ -33,8 +33,7 @@ ul
     align-items: center;
     padding-left: 15px;
     position: fixed;
-    top: 0;
-    left: 0;
+    margin: -10px;
     z-index: 999;
 	word-wrap: normal;
 }
