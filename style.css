@@ -30,7 +30,7 @@ ul
     font-size: 28pt;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 15px;
     position: fixed;
     z-index: 999;
